@@ -78,7 +78,15 @@ class _MainPageState extends State<MainPage> {
                 return CupertinoTabView(
                   navigatorKey: tabsNavigatorKeys[index],
                   builder: (BuildContext context) => Container(
-                    child: Text(index.toString()),
+                    child: Column(children: <Widget>[
+                      Text(index.toString()),
+                      MaterialButton(
+                        child: Text("navigate"),
+                        onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Text('secondPage')));
+                        },
+                      )
+                    ],),
                   ),
                 );
                 break;
@@ -86,7 +94,15 @@ class _MainPageState extends State<MainPage> {
                 return CupertinoTabView(
                   navigatorKey: tabsNavigatorKeys[index],
                   builder: (BuildContext context) => Container(
-                    child: Text(index.toString()),
+                    child: Column(children: <Widget>[
+                      Text(index.toString()),
+                      MaterialButton(
+                        child: Text("navigate"),
+                        onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Text('secondPage')));
+                        },
+                      )
+                    ],),
                   ),
                 );
                 break;
@@ -94,7 +110,15 @@ class _MainPageState extends State<MainPage> {
                 return CupertinoTabView(
                   navigatorKey: tabsNavigatorKeys[index],
                   builder: (BuildContext context) => Container(
-                    child: Text(index.toString()),
+                    child: Column(children: <Widget>[
+                      Text(index.toString()),
+                      MaterialButton(
+                        child: Text("navigate"),
+                        onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Text('secondPage')));
+                        },
+                      )
+                    ],),
                   ),
                 );
                 break;
@@ -102,7 +126,15 @@ class _MainPageState extends State<MainPage> {
                 return CupertinoTabView(
                   navigatorKey: tabsNavigatorKeys[index],
                   builder: (BuildContext context) => Container(
-                    child: Text(index.toString()),
+                    child: Column(children: <Widget>[
+                      Text(index.toString()),
+                      MaterialButton(
+                        child: Text("navigate"),
+                        onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Text('secondPage')));
+                        },
+                      )
+                    ],),
                   ),
                 );
                 break;
